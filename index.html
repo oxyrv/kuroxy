@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Kuroxy Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="shortcut icon" href="https://cdn.discordapp.com/icons/1403136181268512869/c833fa9a49158efe0908f31eb3c7e700.png?size=1024" type="image/x-icon">
+    </head>
+    <body onload="load_data()">
+        <!-- <div class="relative upbar shadow-[0px_0px_29px_6px_rgba(158,62,255,0.8)] top-5 left-5 p-3 justify-items-center-safe grid grid-flow-col"> -->
+        <div class="relative upbar shadow-[0px_0px_29px_6px_rgba(158,62,255,0.8)] top-5 left-5 p-3">
+            <div style="position: absolute;left: 10px;top: 10px;">
+                <p><img src="https://cdn.discordapp.com/icons/1403136181268512869/c833fa9a49158efe0908f31eb3c7e700.png" width="32px" style="display: inline; user-select: none;" draggable="false"> <strong>Kuroxy</strong> - <i>Dashboard</i></p>
+            </div>
+            <div style="position: absolute;right: 10px;top: 10px;">
+            <!-- <div class="grid grid-flow-col justify-items-end"> -->
+                <p><a href="https://dsc.gg/kuroxy" target="_blank">Discord Server</a></p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="main-app relative top-5 left-5 p-3" style="display: block ruby;">
+            <div class="shadow-[0px_0px_29px_6px_rgba(158,62,255,0.8)] cat">
+                <h1><a class="icon">📥</a> Downloads</h1><br>
+                <p>Download the program needed to mine!</p><br>
+                <p>Zip password : 123</p><br>
+                <p> </p><br>
+                <a href="./cdn/miner.zip" target="_blank" class="btn">Download</a>
+                <p> </p><br>
+                <p> </p><br>
+            </div><span>               </span>
+            <div class="shadow-[0px_0px_29px_6px_rgba(158,62,255,0.8)] cat" style="width: 20%;">
+                <h1><a class="icon">📈</a> Statistics</h1><br>
+                <p>Current Hashrate : <a id="curhash">?</a> H/s</p><br>
+                <p>30s Share Rate : <a id="shareRate">?</a></p><br>
+                <p>Confirmed Balance : <a id="bal">?</a> XMR</p><br>
+                <p>⚠️ THIS IS NOT REALTIME (yet)</p><br>
+            </div><span>               </span>
+            <div class="shadow-[0px_0px_29px_6px_rgba(158,62,255,0.8)] cat">
+                <h1><a class="icon">⚠️</a> Warning!</h1><br>
+                <p>Be aware of phishing domains!</p>
+                <p>Only download from <strong>kuroxy.oxyru.xyz</strong>!</p><br>
+                <p>And make sure to join the Discord server to be notified about updates and talk with the community!</p><br>
+            </div><span>               </span>
+            <div class="shadow-[0px_0px_29px_6px_rgba(158,62,255,0.8)] cat" style="width: 20%;">
+                <h1><a class="icon">❓</a> About Us</h1><br>
+                <p>We are a community that all mine cryptocurrency together</p>
+                <p>on the same wallet!</p>
+                <p>We do that to do giveaways and purchase stuff for ourselves!</p><br>
+                <p>Join the Discord now!</p><br>
+            </div>
+        </div>
+        <script src="./src/app.js"></script>
+    </body>
+</html>

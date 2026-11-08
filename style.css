@@ -1,0 +1,108 @@
+body {
+    background-color: #0c0118;
+    overflow-x: hidden;
+}
+
+a, p, h1, h2, h3 {
+    color: #7b51a3;
+}
+
+.upbar {
+    background-color: #460980;
+    border-radius: 15px;
+    border: solid 1px #7b51a3;
+    width: 97.5%;
+    color: #7b51a3;
+    display: block ruby;
+}
+
+.icon {
+    background-color: #9e85b6;
+    padding: 10px;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.cat {
+    width: 15%;
+    background-color: #460980;
+    border-radius: 15px;
+    border: solid 1px #7b51a3;
+    color: #7b51a3;
+    display: block;
+    padding: 15px;
+}
+
+.btn {
+    background-color: #8421e0;
+    border-radius: 10px;
+    border: solid 1px #7b51a3;
+    padding: 5px;
+    color: rgb(38, 11, 65);
+}
+
+@media screen and (max-width: 1024px) {
+    .cat {
+        width: 35%;
+    }
+
+    .main-app {
+        display: flex !important;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .main-app span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .upbar {
+        width: calc(100% - 20px);
+        left: 0;
+        top: 5px;
+        box-sizing: border-box;
+        min-height: 65px;
+    }
+
+    .upbar > div {
+        position: static !important;
+        text-align: center;
+    }
+
+    .upbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .upbar p {
+        margin: 5px;
+    }
+
+    .main-app {
+        left: 0;
+        top: 5px;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .cat,
+    .main-app .cat {
+        width: 100% !important;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cat h1 {
+        font-size: 1.5rem;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
